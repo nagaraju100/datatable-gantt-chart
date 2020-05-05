@@ -1,0 +1,125 @@
+.loginImage { 
+position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.panel-default {
+ opacity: 0.9;
+ margin-top:30px;
+}
+.form-group.last {
+ margin-bottom:0px;
+}
+//
+// Pages: Login & Register
+//
+
+.login-logo,
+.register-logo {
+  font-size: 2.1rem;
+  font-weight: 300;
+  margin-bottom: .9rem;
+  text-align: center;
+
+  a {
+    color: $gray-700;
+  }
+}
+
+.login-page,
+.register-page {
+  align-items: center;
+  background: $gray-200;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.login-box,
+.register-box {
+  width: 360px;
+
+  @media (max-width: map-get($grid-breakpoints, sm)) {
+    margin-top: .5rem;
+    width: 90%;
+  }
+}
+
+.login-card-body,
+.register-card-body {
+  background: $white;
+  border-top: 0;
+  color: #666;
+  padding: 20px;
+
+  .input-group {
+    .form-control {
+      border-right: 0;
+
+      &:focus {
+        box-shadow: none;
+
+        & ~ .input-group-append .input-group-text {
+          border-color: $input-focus-border-color;
+        }
+      }
+
+      &.is-valid {
+        &:focus {
+          box-shadow: none;
+        }
+
+        & ~ .input-group-append .input-group-text {
+          border-color: $success;
+        }
+      }
+
+      &.is-invalid {
+        &:focus {
+          box-shadow: none;
+        }
+
+        & ~ .input-group-append .input-group-text {
+          border-color: $danger;
+        }
+      }
+    }
+
+    .input-group-text {
+      background-color: transparent;
+      border-bottom-right-radius: $border-radius;
+      border-left: 0;
+      border-top-right-radius: $border-radius;
+      color: #777;
+      transition: $input-transition;
+    }
+  }
+}
+
+.login-box-msg,
+.register-box-msg {
+  margin: 0;
+  padding: 0 20px 20px;
+  text-align: center;
+}
+
+.social-auth-links {
+  margin: 10px 0;
+}
+
+.colorgraph {
+  height: 8px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
