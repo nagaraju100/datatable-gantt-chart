@@ -2,6 +2,10 @@
 
 This project is usefull to use the datatable to create gantt chart.
 
+**How to Run**
+1. clone the project in any location of your wish.
+2. click on the  datatableGanttchart.html page.
+
 I have used the Datatable and created gantt chart format .
 
 **This project has the following feature.**
